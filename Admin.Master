@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Proje1.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder  ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 202px;
+            width: 981px;
+            margin-left:454px;
+            background-color: #FFFFFF;
+        }
+         .auto-style4 {
+            width: 268px;
+            height: 245px;
+            background-color: #CCCCFF;
+          
+            float:left;
+            text-decoration: underline;
+            margin-left: 3px;
+        }
+        .auto-style5 {
+            width: 627px;
+            height: auto;
+            background-color: #CCCCFF;
+            margin-left: 355px;
+         
+        }
+         .auto-style8 {
+         
+            margin-left:455px;
+            width:985px;
+            height:auto;
+        }
+                
+        .menu {
+            text-align: center;
+            background-color: #FFFFFF;
+        }
+        .menu a{
+			text-decoration:none;
+			display:inline-block;
+			width:150px;
+			color:#933;
+			font-weight:bold;
+			margin:5px;
+			text-align:center;
+			border-bottom:5px solid #933;
+		}
+		.menu a:hover{
+			color:black;
+			border-bottom:5px solid black;
+		}
+        
+        .auto-style12 {
+            width: 1360px;
+            height: 20px;
+            background-color: #FFFFFF;
+            margin-left: 100px;
+        }
+        
+        .auto-style13 {
+            margin-left: 0px;
+        }
+        
+        .auto-style14 {
+            font-size: large;
+        }
+        .auto-style15 {
+            width: 100%;
+            background-color: #CCCCFF;
+        }
+        .auto-style16 {
+            text-align: center;
+            font-size: large;
+        }
+        
+        </style>
+</head>
+<body style="width: 1435px">
+    <form id="form1" runat="server">
+        <div class="auto-style1">
+          
+        &nbsp;<asp:Image ID="Image1" runat="server" Height="206px" ImageUrl="~/resimler/images.jpg" Width="975px" CssClass="auto-style13" />
+        </div>
+         <div  class="auto-style12">
+          
+        </div>
+
+        <div class="auto-style8" >
+            <div  class="auto-style4"> 
+                <table class="auto-style15">
+                    <tr>
+                        <td class="auto-style16"><strong>MENÜLER</strong></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                      <td style="border: thin solid #C0C0C0"> <a href="Kategoriler.aspx"> KATEGORİLER </a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin solid #C0C0C0"> <a href="Yemek.aspx">YEMEKLER </a></td>
+                    </tr>
+
+                    <tr>
+                        <td style="border: thin solid #C0C0C0"> <a href="Yorum.aspx">YORUMLAR </a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin solid #C0C0C0">  <a href="Mesaj.aspx"> MESAJLAR </a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin solid #C0C0C0"><a href="GününYemeğiAdmin.aspx">GÜNÜN YEMEĞİ</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin solid #C0C0C0"> <a href="Öner.aspx">ÖNERİLER</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin solid #C0C0C0"> <a href="HakkımızdaAdmin.aspx">HAKKIMIZDA</a></td>
+                    </tr>
+                </table>
+                <strong><em><span class="auto-style14">
+                <br />
+                </span></em></strong>
+            </div>
+          <div  class="auto-style5">
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    
+        &nbsp;</div>
+            </div>
+    </form>
+</body>
+</html>
